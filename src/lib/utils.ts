@@ -16,8 +16,8 @@ export function absoluteUrl(path: string) {
 }
 
 export function constructMetadata({
-  title = "DocXpert - the SaaS for students",
-  description = "DocXpert is an open-source software to make chatting to your PDF files easy.",
+  title = "DocXpert: Chat & Query Documents with AI",
+  description = "Explore the seamless experience of conversing and querying your PDF files effortlessly with AI Chat. This open-source software redefines the way you engage with your documents.",
   image = "/thumbnail.png",
   icons = "/favicon.ico",
   noIndex = false
