@@ -20,21 +20,22 @@ const Message = forwardRef<HTMLDivElement, MessageProps>(
         })}>
         <div
           className={cn(
-            'relative flex h-6 w-6 aspect-square items-center justify-center',
+            'relative flex items-center justify-center',
             {
-              'order-2 bg-orange-500 rounded-sm':
-                message.isUserMessage,
-              'order-1 bg-zinc-800 rounded-sm':
-                !message.isUserMessage,
+              'order-2 bg-orange-500 rounded-sm': message.isUserMessage,
+              'order-1 rounded-sm': !message.isUserMessage,
               invisible: isNextMessageSamePerson,
-            }
-          )}>
+            },
+            message.isUserMessage ? 'h-6 w-6 aspect-square' : 'h-7 w-7 aspect-square'
+          )}
+        >
           {message.isUserMessage ? (
             <Icons.user className='fill-zinc-200 text-zinc-200 h-3/4 w-3/4' />
           ) : (
-            <Icons.logo className='fill-zinc-300 h-3/4 w-3/4' />
+            <Icons.logo className='h-full w-full' />
           )}
         </div>
+
 
         <div
           className={cn(
