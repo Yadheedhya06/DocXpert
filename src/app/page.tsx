@@ -30,8 +30,7 @@ export default function Home() {
             size: 'lg',
             className: 'mt-5',
           })}
-          href='/sign-up'
-          target='_blank'>
+          href='/sign-up'>
           Get started{' '}
           <ArrowRight className='ml-2 h-5 w-5' />
         </Link>
