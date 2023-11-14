@@ -56,7 +56,7 @@ export const POST = async (req: NextRequest) => {
     embeddings,
     {
       pineconeIndex,
-      namespace: file.id,
+      //namespace: file.id,
     }
   )
 
