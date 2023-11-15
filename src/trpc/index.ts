@@ -189,8 +189,7 @@ export const appRouter = router({
       })
 
       if (!file) throw new TRPCError({ code: 'NOT_FOUND' })
-
-      console.log(`trying with file key : ${input.key}`)
+      
       return file
     }),
 

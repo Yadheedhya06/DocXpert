@@ -82,6 +82,8 @@ const UploadDropzone = ({
 
         const key = fileResponse?.key
 
+        console.log(`fileresponse is: ${JSON.stringify(fileResponse)}`)
+
         if (!key) {
           return toast({
             title: 'Something went wrong',
